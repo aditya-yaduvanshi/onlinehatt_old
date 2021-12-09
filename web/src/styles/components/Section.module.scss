@@ -1,0 +1,39 @@
+.section {
+  position: relative;
+  padding-bottom: 5px;
+  background: var(--light-color);
+  border-radius: 30px;
+  margin: 20px 5px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  overflow: hidden;
+
+  &_title {
+    border-bottom: 1px solid black;
+    padding: 3px;
+    background: var(--secondary-animation);
+  }
+
+  &_articles {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top: 5px;
+    overflow: visible;
+  }
+  &_article {
+    margin: 0 8px;
+  }
+
+  &_dir_btn {
+    position: absolute;
+    top: 1.5%;
+
+    &_left {
+      left: 3%;
+    }
+    &_right {
+      right: 3%;
+    }
+  }
+}

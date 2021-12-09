@@ -1,0 +1,116 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--theme1-color-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.sidebar_toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sidebar_toggle:hover {
+  background: rgba(0,0,0,0.3);
+}
+.sm_middle, .md_middle, .lg_middle {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.lg_top, .lg_middle, .lg_bottom, .md_top, .md_middle, .md_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dots {
+  height: 5px;
+  width: 5px;
+  background: var(--white-color);
+  border-radius: 50%;
+}
+.lg_top_middle, .lg_middle_middle, .lg_bottom_middle {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.md_left {
+  margin-right: 3px;
+} 
+.md_right {
+  margin-left: 3px;
+}
+.nav_links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav_link {
+  padding: 5px 10px;
+  color: var(--white-color);
+  margin: 0 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.1s;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav_link:hover {
+  border-color: white;
+}
+.nav_link:hover, .nav-link-active {
+  background: rgba(0,0,0,0.3);
+  color: var(--white-color);
+}
+.nav_link:active {
+  background: rgba(0,0,0,0.1);
+}
+.signin {
+  background: var(--theme1-color-success);
+  border: 2px solid var(--theme1-color-success);
+}
+.signin:active {
+  background: var(--theme1-color-success-dim);
+}
+.signin:hover {
+  border-color: var(--theme1-color-success);
+}
+.register {
+  background: var(--theme1-color-energy);
+  border: 2px solid var(--theme1-color-energy);
+}
+.register:hover {
+  border-color: var(--theme1-color-energy);
+}
+.register:active {
+  background: var(--theme1-color-energy-dim);
+}
+.signout {
+  background: var(--theme1-color-error);
+  border: 2px solid var(--theme1-color-error);
+}
+.signout:active {
+  background: var(--theme1-color-error-dim);
+}
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand a {
+  font-size: 1.5rem;
+}
+.modal_button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  cursor: pointer;
+} 

@@ -1,0 +1,16 @@
+.subnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  &_link {
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
+  &_link_active {
+    margin: 0 10px;
+  }
+}

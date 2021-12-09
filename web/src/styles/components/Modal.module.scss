@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+  padding: 5rem;
+  z-index: 1000;
+  button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+}

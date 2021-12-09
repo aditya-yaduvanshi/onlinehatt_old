@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: rgb(235, 235, 255);
+  --white-color: white;
+  --dark-color: rgba(0,0,0,0.7);
+  --light-color: rgb(250, 250, 255);
+  --primary-color: rgb(0, 100, 255);
+  --primary-animation: rgb(0, 0, 255);
+  --secondary-animation: rgb(200, 200, 255);
+  --primary-hover-color: rgb(0, 150, 255);
+  --primary-active-color: rgb(100, 200, 255);
+  --success-color: rgb(100,255,100);
+  --error-color: rgb(255,25,25);
+  
+  /* theme 1 colors */
+  --theme1-color-energy: #FFCC44;
+  --theme1-color-error: #E15554;
+  --theme1-color-success: #64FF64;
+  --theme1-color-primary: #0066FF;
+  --theme1-color-secondary: #7768AE;
+  --theme1-color-dark: #202530;
+  --theme1-color-light: #dfedfe;
+  /* theme 1 dim colors */
+  --theme1-color-energy-dim: #FFCC4477;
+  --theme1-color-error-dim: #E1555477;
+  --theme1-color-success-dim: #64FF6477;
+  --theme1-color-primary-dim: #0066FF77;
+  --theme1-color-secondary-dim: #7768AE77;
+  --theme1-color-dark-dim: #20253077;
+  --theme1-color-light-dim: #dfedfe77;
+
+  --rich-black: #001219;
+  --blue-saphire: #005F73;
+  --viridian-green: #0A9396;
+  --middle-blue-green: #94D2BD;
+  --medium-champaigne: #E9D8A6;
+  --gamboge: #EE9B00;
+  --alloy-orange: #CA6702;
+  --mahogany: #BB3E03;
+  --rufous: #AE2012;
+  --ruby-red: #9B2226;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+}
+a {
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.container {
+  padding: 5px;
+}
+

@@ -1,0 +1,24 @@
+.field {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  transition: all 0.2s;
+}
+.field_button {
+  height: 75%;
+  width: 100%;
+  margin-top: 3%;
+  border-radius: 3px;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.field_button:hover {
+  background: var(--primary-hover-color);
+}
+.field_button:active {
+  background: var(--primary-active-color);
+}

@@ -1,0 +1,61 @@
+.fetch {
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--secondary-animation);
+  transition: all 0.3s;
+}
+.fetch_indicator {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-animation);
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-animation),
+    var(--primary-animation),
+    var(--secondary-animation)
+  );
+  animation: fetch 1.6s infinite forwards ease;
+}
+@keyframes fetch {
+  0% {
+    width: 0%;
+    background-color: var(--primary-animation);
+    background-image: linear-gradient(
+      to right,
+      var(--primary-animation)
+    );
+  }
+  50% {
+    width: 100%;
+    background-color: var(--primary-animation);
+    background-image: linear-gradient(
+      to right,
+      var(--secondary-animation),
+      var(--secondary-animation),
+      var(--primary-animation)
+    );
+  }
+  51% {
+    width: 0%;
+    background-color: var(--primary-animation);
+    background-image: linear-gradient(
+      to right,
+      var(--primary-animation),
+      var(--secondary-animation)
+    );
+  }
+  100% {
+    width: 100%;
+    background-color: var(--primary-animation);
+    background-image: linear-gradient(
+      to right,
+      var(--secondary-animation),
+      var(--secondary-animation),
+      var(--secondary-animation),
+      var(--primary-animation)
+    );
+  }
+}
